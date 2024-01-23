@@ -28,6 +28,7 @@ exports.registerUser = async (req, res, next) => {
 		//? CHECK IF EMAIL ALREADY EXISTS
 		const checkEamil = await USERS.findOne({ email });
 		if (checkEamil) {
+			console.log('HI');
 			return next(new AppError('Email addres must be uniques', 400));
 		}
 
