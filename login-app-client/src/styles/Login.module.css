@@ -1,0 +1,25 @@
+.bgBlue {
+	@apply h-screen flex items-center
+		justify-center;
+}
+.card {
+	background-color: #fff;
+	max-width: 500px;
+	padding: 24px;
+	border-radius: 10px;
+
+	@apply shadow-lg w-2/3;
+}
+
+.cardHeader {
+	margin-bottom: 30px !important;
+	@apply text-center;
+}
+
+.cardHeader > strong {
+	@apply text-slate-900 text-xl mb-2 block;
+}
+
+.cardHeader > p {
+	@apply w-2/3 m-auto mt-1 text-[14px] text-slate-500;
+}
