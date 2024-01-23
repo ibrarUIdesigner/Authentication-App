@@ -7,8 +7,8 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-./login-app-client/node_modules
-./server/node_modules
+**/node_modules/
+**/.env
 
 dist
 dist-ssr
@@ -26,5 +26,4 @@ dist-ssr
 *.sw?
 
 
-./server/config.env
-./login-app-client/.env
+
